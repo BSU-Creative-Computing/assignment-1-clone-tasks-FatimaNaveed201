@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"> <!-- linking the stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title> <!-- setting the title -->
+</head>
+<body>
+    
+    <!-- Creating the nav bar with a class called navbar -->
+    <nav class="navbar">
+
+        <!-- creating a div for the left side of nav bar -->
+        <div class="left-side-navbar">
+            <span><h2>What's On</h3></span> <!-- Title -->
+        </div>
+
+        <!-- creating a div for the center of the nav bar... the search bar -->
+        <div class="center-navbar">
+            <input type="text" class="search" placeholder="Search...."> <!-- using input tag to create the search bar -->
+        </div>
+
+        <!-- creating the right side of the nav bar and adding the links using <a> tag -->
+        <div class="right-side-navbar">
+            <a href="#">Movies</a>
+            <a href="#">TV</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+
+        <!-- Creating a separate div for the menu heading which is only displayed at a certain media query -->
+        <div class="Menu">Menu</div> 
+    </nav>
+
+    <!-- Creating a section as the main container which will have all the content -->
+    <section class="container">
+
+        <!-- Creating a div called items item1 for the avengers box which will be displayed on the left side -->
+        <div class="items item1">
+            <img src="avengers.jpg" alt="avengers"> <!-- adding image -->
+            <h2>Avengers - Endgame</h2> <!-- movie title -->
+            <p>After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p> <!-- movie description -->
+            <button class="more-info-button">More Info...</button> <!-- creating a more info button -->
+        </div>
+
+        <!-- a sub container for the right side of the output -->
+        <div class="right">
+
+            <!-- dividing the sub container into two more containers for easy styling in css -->
+            <section class="right1">
+                <div class="items item2"> <!-- div for the 2nd item -->
+                    <img src="lone-gunmen.jpg" alt="the lone gunmen"> <!-- image -->
+                    <h2>The Lone Gunmen</h2> <!-- title -->
+                    <p>The X-Files' Lone Gunmen, investigate crimes and conspiracies, often in a silly, comedic and over the top fashion.</p> <!-- movie description -->
+                    <button class="more-info-button">More Info...</button> <!-- creating the more info button -->
+                </div>
+
+                <div class="items item4"> <!-- div for the 3rd item -->
+                    <img src="millenium.jpg" alt="the millenium trilogy"> <!-- image -->
+                    <h2>The Milennium</h2> <!-- title -->
+                    <p>A former FBI profiler with the ability to look inside the mind of a killer working for a very merciless and obnoxiously mysterious Group.</p> <!-- movie description -->
+                    <button class="more-info-button">More Info...</button> <!-- creating the more info button -->
+                </div>
+
+            </section>
+            
+            <!-- creating the second sub container for the main right side container -->
+            <section class="right2">
+
+                <div class="items item3"> <!-- div for the 4th item -->
+                    <img src="predators.jpg" alt="Predators"> <!-- image -->
+                    <h2>Predators</h2> <!-- title -->
+                    <p>A group of elite warriors parachutes into an unfamiliar jungle and are hunted by members of a merciless alien race.</p> <!-- movie description -->
+                    <button class="more-info-button">More Info...</button> <!-- creating the more info button -->
+                </div>
+
+                
+
+                <div class="items item5"> <!-- div for the 5th item -->
+                    <img src="rage.jpg" alt="Rage"> <!-- image -->
+                    <h2>Rage</h2> <!-- title -->
+                    <p>A former FBI profiler with the ability to look inside the mind of a killer working for a very merciless and obnoxiously mysterious Group.</p> <!-- movie description -->
+                    <button class="more-info-button">More Info...</button> <!-- creating the more info button -->
+                </div>
+                
+            </section>
+        </div>
+    </section>
+    <br> <!-- adding a new line -->
+
+    <!-- adding the footer tag -->
+    <footer>Web Dev II - Assessment 1 - Tast Two</footer>
+    
+</body>
+</html>

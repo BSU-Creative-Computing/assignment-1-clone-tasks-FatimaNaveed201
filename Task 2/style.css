@@ -1,0 +1,341 @@
+/* importing the same font as the image provided */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+/* styling the body tag and setting bg color and font family */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(247, 247, 247);
+}
+
+/* styling the nav bar */
+.navbar {
+    background-color: #1E90FF;
+    display: flex;
+    justify-content: space-between; /* adding equal space between all three divs of nav  bar using space-between element */
+    align-items: center;
+    color: white; /* setting text color to white */
+    /* setting paddings on all sides */
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    height: 55px; /* setting a fixed height and auto width */
+    width: auto;
+}
+
+/* setting the text color to white */
+.left-side-navbar {
+    color: white;
+}
+
+/* styling the search bar with white bg and grey text */
+.search {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    /* setting a width and height for the search bar */
+    width: 300px;
+    height: 35px;
+}
+
+/* styling the right side of the nav bar */
+.right-side-navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.p{
+    height: 50px;
+}
+
+/* setting the menu div's visibillity to hidden */
+.right-side-navbar Menu{
+    visibility: hidden;
+}
+
+/* styling the links and removing text decorations */
+.right-side-navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* styling the more info button for all items */
+.more-info-button {
+    float: right; /* placing the button to the right side of the item divs */
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none; /* removing the text decorations */
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* adding a transition for the color change animation */
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+/* adding a hover effect to all the more info buttons */
+.more-info-button:hover {
+    background-color: rgb(71, 206, 251);
+    color: black;
+}
+
+/* setting margins for the main container */
+.container {
+    display: flex;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-top: 5px;
+    height: auto;
+}
+
+/* setting image widths to 100% with height set to auto */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* hiding the menu link */
+.Menu{
+    display: none;
+}
+
+/* styling the first item */
+.item1 {
+    flex: 3; /* setting flex to 3 so it takes 3 spaces */
+    padding-top: 10px;
+    background-color: white;
+    text-align: left;
+    height: 30%; /* setting the height to 30% */
+    box-shadow: 5px 5px 10px 2px #ccc;
+    margin-right: 20px; /* Adding margin to separate from other items */
+    margin-left: 7px;
+    border-radius: 3px; /* Adding border radius */
+    padding: 0%;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+/* styling the h2 element of item1 */
+.item1 h2{
+    margin-top: 4px;
+    padding-bottom: 8px;
+    padding-left: 13px;
+    padding-right: 18px;
+}
+
+/* styling the p tag for item1 */
+.item1 p{
+    margin-top: -22px;
+    padding-bottom: 8px;
+    padding-left: 13px;
+    padding-right: 18px;
+}
+
+/* styling the button for item1 */
+.item1 button{
+    margin-right: 33px;
+    margin-top: 18px;
+}
+
+/* styling the right side main container */
+.right {
+    display: flex;
+    flex: 2; /* setting the felx value to 2 */
+    margin-top: 14px;
+}
+
+/* setting the flex value to 1 for each sub container in .right */
+.right1,.right2{
+    flex: 1;
+}
+
+/* styling all the items placed in the right side */
+.item2, .item3, .item4, .item5{
+    margin-top: 10px;
+    height: 600px; /* Setting height of the items */
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 3px; /* Adding border radius */
+    box-shadow: 5px 5px 10px 0px #ccc; /* adding box shadow */
+    border: 1px solid lightgray; /* setting a border */
+}
+
+/* styling the footer */
+footer{
+    background-color: #1E90FF; /* setting the bg to the same color as the nav bar */
+    color:white; /* setting text to white */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 20px;
+    text-align: center; /* aligning the text to the centre of the footer */
+    width: auto;
+}
+
+/* adding the media query for screen sizes more than 1281px */
+@media screen and (min-width:1281px){
+    .right h2{
+        font-size: 22px;
+    }
+    .item1{
+        padding-bottom: 30px;
+    }
+}
+
+/* adding the media queries for screen sizes between 1025px and 1280px */
+@media screen and (min-width: 1025px) and (max-width:1280px){
+    .navbar{
+        width: auto;
+        padding-right: 30px;
+    }
+    /* removing margins and matching the clone image provided */
+    .container {
+        margin-left: 2px;
+        margin-right: 0;
+    }
+    /* setting height for the right side items and adding padding */
+    .item2, .item3, .item4, .item5{
+        height: 42%;
+        padding-bottom: 80px;
+    }
+    /* setting margin for buttons */
+    button{
+        margin-right: 15px;
+    }
+    
+}
+
+/* adding the media queries for screen sizes between 801px and 1024px */
+@media screen and (min-width: 801px) and (max-width:1024px){
+    .navbar{
+        width: auto;
+    }
+
+    /* setting the display as  flex for the main container */
+    .container{
+        margin-left: 2px;
+        margin-right: 0;
+        display: flex;
+    }
+    /* setting a specified flex for the item1 along with its height */
+    .item1{
+        flex: 3;
+        height: 5%;
+    }
+    /* setting the flex to 1 for the right so the right side elements are in one vertical line */
+    .right{
+        flex: 1;
+        display: block;
+    }
+    /* removing teh individual flexes from the sub containers */
+    .right1,.right2{
+        flex: 0;
+    }
+    .item2, .item3, .item4, .item5{
+        padding-bottom: 10px;
+    }
+    button{
+        margin-right: 15px;
+    }
+}
+
+/* adding the media queries for screen sizes between 481px and 800px */
+@media screen and (min-width: 481px) and (max-width:800px){
+    .navbar{
+        width: auto;
+    }
+    .item1{
+        margin-left: 7px;
+    }
+    /* setting the search bar's display to none as we only want the menu heading to be displayed for these screens */
+    .search{
+        display: none;
+        visibility: hidden;
+    }
+    /* setting the container's display to block */
+    .container{
+        margin-left: 2px;
+        margin-right: 0;
+        display: block;
+    }
+    /* setting item1's flex to two so the items below will be in a grid */
+    .item1{
+        height: 900px;
+        flex:2;
+        padding-bottom: 23px;
+    }
+    .right{
+        display: flex;
+    }
+
+    /* setting height for the right items */
+    .item2, .item3, .item4, .item5{
+        height: 45%;
+        padding-bottom: 55px;
+    }
+    .item5 p{
+        margin-bottom: 16px;
+    }
+    /* displaying the menu div */
+    .Menu{
+        display: block;
+    }
+    /* removing the right side items of the nav bar */
+    .right-side-navbar{
+        display: none;
+    }
+}
+
+/* adding media queries for screen sizes less than 480px */
+@media screen and (max-width:480px){
+    .navbar{
+        width: auto;
+    }
+    .left{
+        margin-left: 3px;
+    }
+    /* setting a specific height for the item1 */
+    .item1{
+        height: 70%;
+        padding-bottom: 50px;
+    }
+    .item1 button{
+        margin-bottom: 30px;
+        margin-top: -20px;
+        margin-right: 10px;
+    }
+    .search{
+        display: none;
+        visibility: hidden;
+    }
+    .right-side-navbar{
+        display: none;
+    }
+    .Menu{
+        display: block;
+        padding-left: 5px;
+    }
+    .container{
+        margin-left: 3px;
+        margin-right: 0;
+        display: block;
+    }
+    .right{
+        flex: 1;
+        display: block;
+    }
+    .item2, .item3, .item4, .item5{
+        height: 84%;
+        padding-bottom: 80px;
+    }
+    button{
+        margin-right: 15px;
+    }
+}
