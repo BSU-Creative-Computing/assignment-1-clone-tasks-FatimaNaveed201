@@ -1,3 +1,4 @@
+/* Styling the paragraph text and aligning it to the left */
 p{
     clear: left;
     background-color: white;
@@ -7,18 +8,18 @@ p{
     padding-bottom: 20px;
 }
 
-
+/* Styling the body and clearing any unrequired margin */
 body{
     clear: left;
     clear: right;
     margin-left: none;
-    font-family: monospace;
-    font-size: 15px;
+    font-family: monospace; /* Setting a font to match the clone image provided */
+    font-size: 15px; 
     background-color: rgb(242, 242, 242);
-    margin: -5px;
+    margin: -5px; /* Setting the margin to -5 to remove unwanted margin from all sides */
 }
 
-
+/* Styling the section and setting it bg to white */
 section{
     background-color: white;
     clear: left;
@@ -27,13 +28,13 @@ section{
     margin: auto;
 }
 
-
+/* Setting the bg and padding for the header */
 header{
     background-color: white;
     padding-top: 5px;
 }
 
-
+/* styling the svg by setting a fixed width, height and margins */
 svg{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -42,13 +43,13 @@ svg{
     height: 70px;
 }
 
-
+/* Using float left... aligning all the images to the left side and setting their width so they match the clone images */
 img{
     float: left;
     width: 33.3%;
 }
 
-
+/* styling the footer and setting its bg to  black */
 footer{
     background-color: black;
     color:white;
@@ -58,7 +59,7 @@ footer{
     margin:auto;
 }
 
-
+/* adding the media queries for screens with size less than 480px */
 @media  screen and (max-width: 480px) {
 
     img {
@@ -71,6 +72,7 @@ footer{
     }
 }
 
+/* adding media queries for screen sizes between 481px and 800px */
 @media  screen and (min-width: 481px) and (max-width: 800px) {
 
     img{
@@ -82,7 +84,8 @@ footer{
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+/* adding media queries for screen sizes between 801px and 1025px */
+@media screen and (min-width: 801px) and (max-width: 1025px) {
     img {
         width: 33.5%;
         float: left; 
@@ -94,6 +97,7 @@ footer{
     }
 }
 
+/* adding media queries for screen sizes more than 1024px */
 @media screen and (min-width: 1024px){
     img {
         width: 33.301%;
