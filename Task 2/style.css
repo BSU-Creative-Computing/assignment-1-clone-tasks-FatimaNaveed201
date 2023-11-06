@@ -306,35 +306,43 @@ footer{
         height: 70%;
         padding-bottom: 50px;
     }
+    /* styling the button alignment in item1 */
     .item1 button{
         margin-bottom: 30px;
         margin-top: -20px;
         margin-right: 10px;
     }
+    /* hiding the search bar */
     .search{
         display: none;
         visibility: hidden;
     }
+    /* hiding the right side of the nav bar */
     .right-side-navbar{
         display: none;
     }
+    /* displaying the menu text */
     .Menu{
         display: block;
         padding-left: 5px;
     }
+    /* setting the display to block for the main container */
     .container{
         margin-left: 3px;
         margin-right: 0;
         display: block;
     }
+    /* setting the right container's flex value as 1 so all the items are in a single vertical line */
     .right{
         flex: 1;
         display: block;
     }
+    /* setting the height and padding of items */
     .item2, .item3, .item4, .item5{
         height: 84%;
         padding-bottom: 80px;
     }
+    /* margins for the buttons */
     button{
         margin-right: 15px;
     }

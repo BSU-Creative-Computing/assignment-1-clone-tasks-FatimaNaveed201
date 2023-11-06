@@ -1,0 +1,168 @@
+// creating multiple variables for different colors
+$header-color: #8ccff7; 
+$body-color: #e2eff1;
+$main-color1: #4e89ae;
+$main-color2: #43658b;
+$main-color3: #ed6663;
+$main-color4: #ffa372;
+
+
+// creating a mixin called breakpoint for media queries
+@mixin breakpoint($minwidth, $maxwidth){
+    @media screen and (min-width:$minwidth)and (max-width:$maxwidth){
+        @content
+    }
+}
+
+.header {
+    display: flex; //setting the display to flex and justifying the content to center
+    justify-content: center;
+    background-color: $header-color; //calling the header color variable to set the bg color
+    margin-left: -7px;
+    margin-top: -7px;
+    margin-right: -7px;
+}
+
+// including the breakpoint mixin for screen sizes above 621px
+.header-img-small, .header-img-smaller{
+    @include breakpoint(621px, none){
+        display: none;
+    }
+}
+
+// including the breakpoint mixin for screen sizes between 481px and 620px
+.header-img, .header-img-smaller{
+    @include breakpoint(481px, 620px){
+        display: none;
+    }
+}
+
+// including the breakpoint mixin for screen sizes smaller than 480px
+.header-img, .header-img-small{
+    @include breakpoint(none, 480px){
+        display: none;
+    }
+}
+
+// setting the body color by using the body color variable
+body{
+    background-color: $body-color;
+}
+
+// setting the margin-top for the container
+.container{
+    margin-top: 60px;
+}
+
+// setting the rectangles' display to flex
+.rectangles {
+    display: flex;
+    flex-direction: column; // setting the flex direction to column to match the output given
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+// creating a mixin for styling all the rectangles and their colors
+@mixin rects($bg-color){ //everytime the mixin is called, a specific bg color will be provided
+    height: 36px;
+    background-color: $bg-color; 
+    width: 100%;
+    cursor: pointer; //creating the hover effect for all rectangles
+    &:hover {
+        background-color: #444;
+    } 
+    @include breakpoint(none, 481px){ 
+        height: 42px;
+    }
+}
+
+// calling the mixin and setting the bg color for rect1
+.rect1 {
+    @include rects($main-color1)
+}
+
+// calling the mixin and setting the bg color for rect2
+.rect2 {
+    @include rects($main-color2)
+}
+
+// calling the mixin and setting the bg color for rect3
+.rect3 {
+    @include rects($main-color3)
+}
+
+// calling the mixin and setting the bg color for rect4
+.rect4 {
+    @include rects($main-color4)
+}
+
+// creating a mixin for styling all the circles and their colors
+@mixin circles($bg-color){ //everytime the mixin is called, a specific bg color will be provided
+    border-radius: 50%; // setting the border radius to 50% so the divs are circular
+    background-color: $bg-color;
+    cursor: pointer; // adding the hover effect
+    &:hover {
+        background-color: #444;
+    }
+}
+
+// including the breakpoint mixins 
+.circles{
+    margin-top: 60px;
+    @include breakpoint(621px, none){ //setting the circles in a row for screen sizes more than 621px
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: row; // flex direction set to row, so the circles are placed horizontally 
+        gap: 10px; // setting equal gap between circles
+    }
+    @include max-breakpoint(none, 620px){ // setting the circles in a column for screen sizes less than 620px
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; // flex direction set to column, so the circles are placed vertically
+        gap: 10px; // setting equal gap between circles
+    }
+}
+
+// including the circle mixin and setting the bg color, the width and  the height for circle1
+.circle1{
+    @include circles($main-color1);
+    width: 70px;
+    height: 70px;
+    padding-right: 10px;
+}
+
+// including the circle mixin and setting the bg color, the width and  the height for circle2
+.circle2{
+    @include circles($main-color2);
+    width: 80px;
+    height: 80px;
+    padding-right: 10px;
+}
+
+// including the circle mixin and setting the bg color, the width and  the height for circle3
+.circle3{
+    @include circles($main-color3);
+    width: 90px;
+    height: 90px;
+    padding-right: 10px;
+}
+
+// including the circle mixin and setting the bg color, the width and  the height for circle4
+.circle4{
+    @include circles($main-color4);
+    width: 100px;
+    height: 100px;
+    padding-right: 10px;
+}
+
+// styling the footer
+footer{
+    height: 50px; // setting the height to 50px according to the specifications given
+    margin-top: 60px;
+    background-color: $header-color; // setting the same bg color as the header by calling the header-color variable
+    margin-left: -7px; // setting negative margins to remove unwanted spaces
+    margin-right: -7px;
+    margin-bottom: -7px;
+}
