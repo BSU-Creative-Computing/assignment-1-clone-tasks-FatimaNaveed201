@@ -227,7 +227,7 @@ footer{
     /* setting a specified flex for the item1 along with its height */
     .item1{
         flex: 3;
-        height: 5%;
+        height: 6%;
     }
     /* setting the flex to 1 for the right so the right side elements are in one vertical line */
     .right{
@@ -267,9 +267,12 @@ footer{
     }
     /* setting item1's flex to two so the items below will be in a grid */
     .item1{
-        height: 900px;
+        height: 910px;
         flex:2;
         padding-bottom: 23px;
+    }
+    .item1 button{
+        margin-top: -10px;
     }
     .right{
         display: flex;
