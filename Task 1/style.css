@@ -85,7 +85,7 @@ footer{
 }
 
 /* adding media queries for screen sizes between 801px and 1025px */
-@media screen and (min-width: 801px) and (max-width: 1025px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
     img {
         width: 33.5%;
         float: left; 
